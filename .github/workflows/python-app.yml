@@ -42,5 +42,5 @@ jobs:
       with: 
         image: himanshusharma713/ds-algo
         registry: docker.io
-        username: ${{ DOCKER_USERNAME}}
-        password: ${{ DOCKER_SECRET_TOKEN}
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_SECRET_TOKEN }}
