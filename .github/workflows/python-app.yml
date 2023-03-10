@@ -39,4 +39,4 @@ jobs:
         python search-algo/binarysearch.py
     - name: Run Pytest
       run: |
-       pytest
+       pytest search-algo/binarysearch.py
