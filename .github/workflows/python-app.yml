@@ -37,3 +37,10 @@ jobs:
     - name: Run Binary Search
       run: |
         python search-algo/binarysearch.py
+    - name: Build and Push Docker Image
+      uses: mr-smithers-excellent/docker-build-push@v4
+      with: 
+        image: himanshusharma713/ds-algo
+        registry: docker.io
+        username: ${{ DOCKER_USERNAME}}
+        password: ${{ DOCKER_SECRET_KEY}}
